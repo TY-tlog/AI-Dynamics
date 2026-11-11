@@ -1,0 +1,156 @@
+% ------------------------------------------------------------
+% Research notebook
+% Compiler: pdfLaTeX (default), XeLaTeX or LuaLaTeX all work.
+% ------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+% ---------- Quick-note macros ----------
+\newcommand{\idea}[1]{\par\noindent{\color{green!40!black}\textbf{[Idea]} #1}\par}
+\newcommand{\todo}[1]{\par\noindent{\color{red!70!black}\textbf{[TODO]} #1}\par}
+\newcommand{\question}[1]{\par\noindent{\color{orange!80!black}\textbf{[Question]} #1}\par}
+\newcommand{\note}[1]{\par\noindent{\color{gray}\textbf{[Note]} #1}\par}
+
+% ---------- Dated log entries ----------
+% Usage: \entry{2026-11-12}{Title}  then write freely
+\newcommand{\entry}[2]{\subsection*{#1 \enspace #2}\addcontentsline{toc}{subsection}{#1\; #2}}
+
+\title{Research Notebook}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+%% ============================================================
+\section{Overview}
+%% ============================================================
+\subsection{Goal}
+% What do I want to learn? One or two sentences.
+
+\subsection{Key questions}
+\begin{enumerate}
+  \item
+  \item
+\end{enumerate}
+
+\subsection{Current status}
+% Where things stand now. Overwrite on each update.
+
+%% ============================================================
+\section{Background and Problem Statement}
+%% ============================================================
+\subsection{Motivation}
+
+\subsection{Related work}
+% Summaries of papers read. Cite with \cite{key}.
+
+\subsection{Problem statement}
+
+%% ============================================================
+\section{Model}
+%% ============================================================
+\subsection{Equations}
+% Example (edit as needed):
+% \begin{equation}
+%   \dot{\bm{x}} = f(\bm{x};\, \bm{\theta})
+% \end{equation}
+
+\subsection{Variables and parameters}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Symbol & Meaning & Value / range \\
+    \midrule
+           &         &               \\
+    \bottomrule
+  \end{tabular}
+  \caption{Variables and parameters.}
+\end{table}
+
+\subsection{Assumptions and limitations}
+
+%% ============================================================
+\section{Methods}
+%% ============================================================
+\subsection{Implementation}
+% Code location: src/  (file names, version, commit hash)
+
+\subsection{Experimental setup}
+
+\subsection{Analysis}
+
+%% ============================================================
+\section{Experiment Log}
+%% ============================================================
+% Append new entries below in chronological order.
+% Copy the \entry block for each new one.
+
+\entry{YYYY-MM-DD}{Title}
+\textbf{What I did}
+
+\textbf{Results}
+
+\textbf{Next steps}
+\todo{}
+
+%% ============================================================
+\section{Results}
+%% ============================================================
+% Only consolidated results. Figures: \includegraphics{../results/fig.pdf}
+
+\subsection{Main findings}
+
+\subsection{Unexpected observations}
+
+%% ============================================================
+\section{Discussion}
+%% ============================================================
+\subsection{Interpretation}
+
+\subsection{Limitations}
+
+\subsection{Open questions}
+\question{}
+
+%% ============================================================
+\section{Ideas and TODO}
+%% ============================================================
+\subsection{Ideas}
+\idea{}
+
+\subsection{To do}
+\begin{itemize}
+  \item[$\square$]
+  \item[$\square$]
+\end{itemize}
+
+%% ============================================================
+\appendix
+\section{Appendix}
+%% ============================================================
+\subsection{Derivations}
+
+\subsection{Supplementary figures and tables}
+
+% ---------- References ----------
+% Option 1: write entries by hand
+\begin{thebibliography}{99}
+  % \bibitem{key} Author, Title, Journal, Year.
+\end{thebibliography}
+% Option 2: use BibTeX (remove the block above; needs refs.bib)
+% \bibliographystyle{unsrt}
+% \bibliography{refs}
+
+\end{document}
